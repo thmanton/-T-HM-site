@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-HM Tsiganes-Hébreux Messianiques</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f2;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to bottom, #0073e6, #28a745);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: #d42b1d;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        footer {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>T-HM Tsiganes-Hébreux Messianiques</h1>
+        <p>Une communauté inspirée par la Torah, les Évangiles et le Messie</p>
+        <div class="circle"></div>
+    </header>
+    <nav>
+        <a href="#yeshiva">Yeshiva</a>
+        <a href="#cours">Cours</a>
+        <a href="#parashat">Parashat</a>
+        <a href="#shabbat">Shabbat</a>
+        <a href="#temoignages">Témoignages</a>
+        <a href="#inscription">Inscription</a>
+        <a href="#don">Don</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="yeshiva" class="container">
+        <h2>Yeshiva Shuvu Tsigane</h2>
+        <p>Découvrez notre Yeshiva virtuelle : des cours en ligne en direct ou en différé pour approfondir la Torah et les Évangiles.</p>
+        <div class="card">
+            <h3>Cours en direct</h3>
+            <p>Participez à des études interactives avec des enseignants expérimentés.</p>
+        </div>
+        <div class="card">
+            <h3>Vidéos en différé</h3>
+            <p>Rejouez les sessions à votre rythme. Accessible à tout moment.</p>
+        </div>
+    </section>
+    <section id="inscription" class="container">
+        <h2>Inscription</h2>
+        <p>Rejoignez notre communauté et accédez à nos ressources exclusives.</p>
+        <form>
+            <input type="text" name="name" placeholder="Nom complet" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+    <section id="cours" class="container">
+        <h2>Cours</h2>
+        <div class="card">
+            <h3>Parashat Hebdomadaire</h3>
+            <p>Étude approfondie des sections hebdomadaires de la Torah.</p>
+        </div>
+        <div class="card">
+            <h3>Fêtes Bibliques</h3>
+            <p>Études et réflexions sur les fêtes bibliques juives.</p>
+        </div>
+        <div class="card">
+            <h3>Étude des Évangiles</h3>
+            <p>Analyse spirituelle et symbolique des Évangiles à la lumière de la Torah.</p>
+        </div>
+    </section>
+    <section id="temoignages" class="container">
+        <h2>Témoignages</h2>
+        <p>Découvrez les récits de ceux qui ont été transformés par la Parole et l’Esprit du Messie.</p>
+    </section>
+    <section id="don" class="container">
+        <h2>Don</h2>
+        <p>Soutenez nos projets et notre mission. Chaque contribution nous aide à poursuivre notre travail spirituel et éducatif.</p>
+        <form>
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="number" name="amount" placeholder="Montant (en €)" required>
+            <button type="submit">Faire un don</button>
+        </form>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 T-HM Tsiganes-Hébreux Messianiques</p>
+        <p><a href="#calendrier" style="color: white;">Calendrier des fêtes bibliques</a></p>
+    </footer>
+</body>
+</html>
